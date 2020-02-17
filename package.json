@@ -1,0 +1,19 @@
+{
+  "name": "treelifesimulator",
+  "version": "1.0.0",
+  "description": "Tree Life Simulator",
+  "main": "TreeLifeSimulator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ebhooks21@github.com/ebhooks21/treelifesimulator.git"
+  },
+  "author": "Eric Hooks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebhooks21/treelifesimulator/issues"
+  },
+  "homepage": "https://github.com/ebhooks21/treelifesimulator#readme"
+}
