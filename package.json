@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Tree Life Simulator",
   "main": "TreeLifeSimulator.js",
+  "window": {
+    "icon": "./images/icon.png"
+  },
+  "chromium-args": "--enable-logging=stderr --enable-webgl --ignore-gpu-blacklist --password-store=basic",
+  "js-flags": "--expose-gc",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

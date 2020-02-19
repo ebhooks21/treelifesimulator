@@ -13,9 +13,8 @@ function init()
 	nw.Window.open('./views/main.html', {}, function(win)
 	{
 		//Initialize the window
-		win.resizeTo(800, 600);
+		win.maximize();
 		win.title = "Tree Life Simulator";
-		win.moveTo(10, 10);
 
 		setTimeout(function()
 		{
