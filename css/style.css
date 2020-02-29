@@ -15,6 +15,50 @@ canvas
 div.textonlyarea
 {
 	display: none;
+	font-size: 1.2vw;
+	font-weight: bold;
 	height: 100%;
 	width: 100%;
+}
+	div.textonlyarea div.treeinformationarea
+	{
+		border: 1px solid #FFF;
+		float: left;
+		height: 25%;
+		width: 30%;
+	}
+		div.textonlyarea div.treeinformationarea div.treeinformationarea-header
+		{
+			display: block;
+			font-size: 1.4vw;
+			font-weight: bold;
+			text-align: center;
+			width: 100%;
+		}
+		div.textonlyarea div.treeinformationarea div.treeinformationarea-left
+		{
+			float: left;
+			width: 49%;
+		}
+			div.textonlyarea div.treeinformationarea div.treeinformationarea-left span.treeinformationarea-label
+			{
+				display: block;
+				text-align: center;
+				width: 100%;
+			}
+		div.textonlyarea div.treeinformationarea div.treeinformationarea-right
+		{
+			float: right;
+			width: 49%;
+		}
+			div.textonlyarea div.treeinformationarea div.treeinformationarea-right span.treeinformationarea-data
+			{
+				display: block;
+				text-align: center;
+				width: 100%;
+			}
+
+div.clearfix
+{
+	clear: both;
 }

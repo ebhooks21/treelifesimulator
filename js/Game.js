@@ -55,7 +55,20 @@ class Game
 	 */
 	textOnlyStart()
 	{
+		//Reveal the text only area
 		$("#textonlyarea").show();
+
+		//Fill in the game information area
+		this.displayGameInformationArea();
+	}
+
+	/**
+	 * Function to display the game infommation area.
+	 */
+	displayGameInformationArea()
+	{
+		//Display the tree information
+		(this.tree).displayTreeInformation($);
 	}
 
 	/**
