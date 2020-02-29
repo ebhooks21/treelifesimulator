@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ebhooks21/treelifesimulator/issues"
   },
-  "homepage": "https://github.com/ebhooks21/treelifesimulator#readme"
+  "homepage": "https://github.com/ebhooks21/treelifesimulator#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
