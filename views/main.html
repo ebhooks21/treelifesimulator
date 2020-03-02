@@ -9,6 +9,7 @@
 	<script type="text/javascript">
 		//var Game = require('../js/Game.js');
 		var mainGame = null;
+		var textOnly = true;
 	</script>
 </head>
 
@@ -71,7 +72,20 @@
 <script type="text/javascript">
 	function initGame()
 	{
-		mainGame = new Game("Tree", true);
+		if(textOnly)
+		{
+			//Load main menu here
+
+			//Prompt for tree name for now
+			var treeName = prompt("Please Enter A Tree Name: ");
+
+			mainGame = new Game(treeName, true);
+		}
+
+		else
+		{
+			mainGame = new Game("Tree", true);
+		}
 	
 		mainGame.start();
 	}

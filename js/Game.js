@@ -2,7 +2,7 @@
  * Game.js -- File to hold the functions for the Tree Life Simulator game.
  */
 var fs = require('fs');
-var Tree = require('../js/Tree.js');
+var Tree = require('../lib/tree/Tree.js');
 var MainScene = require('../js/MainScene.js');
 
 class Game
