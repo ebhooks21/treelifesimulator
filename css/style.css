@@ -57,6 +57,43 @@ div.textonlyarea
 				text-align: center;
 				width: 100%;
 			}
+	div.textonlyarea div.weatherinformationarea
+	{
+		border: 1px solid #FFF;
+		float: left;
+		height: 25%;
+		width: 30%;
+	}
+		div.textonlyarea div.weatherinformationarea div.weatherinformationarea-header
+		{
+			display: block;
+			font-size: 1.4vw;
+			font-weight: bold;
+			text-align: center;
+			width: 100%;
+		}
+		div.textonlyarea div.weatherinformationarea div.weatherinformationarea-left
+		{
+			float: left;
+			width: 49%;
+		}
+			div.textonlyarea div.weatherinformationarea div.weatherinformationarea-left span.weatherinformationarea-label
+			{
+				display: block;
+				text-align: center;
+				width: 100%;
+			}
+		div.textonlyarea div.weatherinformationarea div.weatherinformationarea-right
+		{
+			float: right;
+			width: 49%;
+		}
+			1div.textonlyarea div.weatherinformationarea div.weatherinformationarea-right span.weatherinformationarea-data
+			{
+				display: block;
+				text-align: center;
+				width: 100%;
+			}
 
 div.clearfix
 {

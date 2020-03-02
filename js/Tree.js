@@ -38,6 +38,15 @@ class Tree
 
 		//Calculate and display the number of leaves
 		$("#treeinformationarea-numleaves").html((this.calculateNumberOfLeaves(null)));
+
+		//Calculate and display the number of roots
+		$("#treeinformationarea-numroots").html((this.calculateNumberOfRoots(null)));
+
+		//Display the current amount of stored sunlight
+		$("#treeinformationarea-collectedsunlight").html(this.sunLevel);
+
+		//Display the current amount of stored water
+		$("#treeinformationarea-collectedwater").html(this.waterLevel);
 	}
 
 	/**
@@ -55,7 +64,7 @@ class Tree
 			{
 				for(branch in branches)
 				{
-					numLeaves += this.calculateNumberOfLeaves(branches[branch]);
+					numLeaves += this.calculateNumberOfLeaves(this.branches[branch]);
 				}
 			}
 		}
@@ -83,7 +92,7 @@ class Tree
 			{
 				for(branch in branches)
 				{
-					numBranches += this.calculateNumberOfBranches(branches[branch]);
+					numBranches += this.calculateNumberOfBranches(this.branches[branch]);
 				}
 			}
 		}
@@ -94,6 +103,34 @@ class Tree
 		}
 
 		return numBranches;
+	}
+
+	/**
+	 * Function to calculate the number of roots
+	 */
+	calculateNumberOfRoots(root)
+	{
+		var numRoots = 0;
+
+		if(root == null)
+		{
+			numRoots += (this.roots).length;
+
+			if((this.roots).length > 0)
+			{
+				for(root in roots)
+				{
+					numRoots += this.calculateNumberOfRoots(this.roots[root]);
+				}
+			}
+		}
+
+		else
+		{
+			numRoots += root.getNumRoots();
+		}
+
+		return numRoots;
 	}
 }
 
