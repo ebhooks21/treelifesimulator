@@ -19,6 +19,7 @@ class Game
 		this.game = null;
 		this.treeName = treeName;
 		this.textOnly = textOnly;
+		this.timeLeftInDay = 300;
 	}
 
 	/**
@@ -60,6 +61,9 @@ class Game
 
 		//Fill in the game information area
 		this.displayGameInformationArea();
+
+		//Start the process of the game
+		this.timeStart();
 	}
 
 	/**
@@ -69,6 +73,60 @@ class Game
 	{
 		//Display the tree information
 		(this.tree).displayTreeInformation($);
+
+		//Display the time left in the day
+		$("#treeinformationarea-timeleftinday").html(Math.ceil((this.timeLeftInDay / 60)) + " minutes");
+	}
+
+	/**
+	 * Function to start the actual game.
+	 */
+	timeStart()
+	{
+		let self = this;
+
+		this.timeLeftInDay = 300;
+
+		setTimeout(function()
+		{
+			self.checkTimePassage();	
+		}, (10 * 1000));
+	}
+
+	/**
+	 * Function to check time passage.
+	 */
+	checkTimePassage()
+	{
+		console.log("HERE -- " + this.timeLeftInDay);
+		let self = this;
+
+		if(this.timeLeftInDay <= 0)
+		{
+			//A day has passed
+			this.timeLeftInDay = 300;
+			(this.tree).ageTreeOneDay();
+		}
+
+		else
+		{
+			this.timeLeftInDay -= 10;
+
+			if(this.timeLeftInDay <= 0)
+			{
+				//A day has passed
+				this.timeLeftInDay = 300;
+				(this.tree).ageTreeOneDay();
+			}
+		}
+
+		//Display the game information area
+		this.displayGameInformationArea();
+
+		setTimeout(function()
+		{
+			self.checkTimePassage();	
+		}, (10 * 1000));
 	}
 
 	/**
