@@ -101,7 +101,49 @@ div.textonlyarea
 			float: right;
 			width: 49%;
 		}
-			1div.textonlyarea div.weatherinformationarea div.weatherinformationarea-right span.weatherinformationarea-data
+			div.textonlyarea div.weatherinformationarea div.weatherinformationarea-right span.weatherinformationarea-data
+			{
+				display: block;
+				text-align: center;
+				width: 100%;
+			}
+	div.textonlyarea div.dayinformationarea
+	{
+		background-color: #FFFFFF;
+		border: 1px solid #FFF;
+		border-radius: 12px;
+		color: #000000;
+		float: left;
+		height: 25%;
+		margin-left: 1%;
+		opacity: 0.5;
+		width: 30%;
+	}
+		div.textonlyarea div.dayinformationarea div.dayinformationarea-header
+		{
+			display: block;
+			font-size: 1.4vw;
+			font-weight: bold;
+			text-align: center;
+			width: 100%;
+		}
+		div.textonlyarea div.dayinformationarea div.dayinformationarea-left
+		{
+			float: left;
+			width: 49%;
+		}
+			div.textonlyarea div.dayinformationarea div.dayinformationarea-left span.dayinformationarea-label
+			{
+				display: block;
+				text-align: center;
+				width: 100%;
+			}
+		div.textonlyarea div.dayinformationarea div.dayinformationarea-right
+		{
+			float: right;
+			width: 49%;
+		}
+			div.textonlyarea div.dayinformationarea div.dayinformationarea-right span.dayinformationarea-data
 			{
 				display: block;
 				text-align: center;

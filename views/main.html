@@ -15,60 +15,76 @@
 
 <body class="stdbody" onload="initGame();">	
 	<div class="textonlyarea" id="textonlyarea">
-		<div class="treeinformationarea">
-			<div class="treeinformationarea-header">
-				Tree Information
+		<div class="leftcolumn">
+			<div class="treeinformationarea">
+				<div class="treeinformationarea-header">
+					Tree Information
+				</div>
+
+				<div class="treeinformationarea-left">
+					<span class="treeinformationarea-label">Tree Name: </span>
+					<span class="treeinformationarea-label">Number of Branches: </span>
+					<span class="treeinformationarea-label">Number of Leaves: </span>
+					<span class="treeinformationarea-label">Number of Roots: </span>
+					<span class="treeinformationarea-label">Collected Sunlight: </span>
+					<span class="treeinformationarea-label">Collected Water: </span>
+					<span class="treeinformationarea-label">Age:  </span>
+				</div>
+
+				<div class="treeinformationarea-right">
+					<span class="treeinformationarea-data" id="treeinformationarea-treename"></span>
+					<span class="treeinformationarea-data" id="treeinformationarea-numbranches"></span>	
+					<span class="treeinformationarea-data" id="treeinformationarea-numleaves"></span>
+					<span class="treeinformationarea-data" id="treeinformationarea-numroots"></span>
+					<span class="treeinformationarea-data" id="treeinformationarea-collectedsunlight"></span>
+					<span class="treeinformationarea-data" id="treeinformationarea-collectedwater"></span>
+					<span class="treeinformationarea-data" id="treeinformationarea-age"></span>
+				</div>
+
+				<div class="clearfix"></div>
 			</div>
 
-			<div class="treeinformationarea-left">
-				<span class="treeinformationarea-label">Tree Name: </span>
-				<span class="treeinformationarea-label">Number of Branches: </span>
-				<span class="treeinformationarea-label">Number of Leaves: </span>
-				<span class="treeinformationarea-label">Number of Roots: </span>
-				<span class="treeinformationarea-label">Collected Sunlight: </span>
-				<span class="treeinformationarea-label">Collected Water: </span>
-				<span class="treeinformationarea-label">Age:  </span>
-				<span class="treeinformationarea-label">Time Left In Day:  </span>
+			<div class="dayinformationarea">
+				<div class="dayinformationarea-header">
+					Day Information
+				</div>
+
+				<div class="dayinformationarea-left">
+					<span class="dayinformationarea-label">Time Left In Day:  </span>
+				</div>
+
+				<div class="dayinformationarea-right">
+					<span class="dayinformationarea-data" id="dayinformationarea-timeleftinday"></span>
+				</div>
+
+				<div class="clearfix"></div>
 			</div>
 
-			<div class="treeinformationarea-right">
-				<span class="treeinformationarea-data" id="treeinformationarea-treename"></span>
-				<span class="treeinformationarea-data" id="treeinformationarea-numbranches"></span>	
-				<span class="treeinformationarea-data" id="treeinformationarea-numleaves"></span>
-				<span class="treeinformationarea-data" id="treeinformationarea-numroots"></span>
-				<span class="treeinformationarea-data" id="treeinformationarea-collectedsunlight"></span>
-				<span class="treeinformationarea-data" id="treeinformationarea-collectedwater"></span>
-				<span class="treeinformationarea-data" id="treeinformationarea-age"></span>
-				<span class="treeinformationarea-data" id="treeinformationarea-timeleftinday"></span>
+			<div class="weatherinformationarea">
+				<div class="weatherinformationarea-header">
+					Weather Information
+				</div>
+
+				<div class="weatherinformationarea-left">
+					<span class="weatherinformationarea-label">Current Season: </span>
+					<span class="weatherinformationarea-label">Number of Branches: </span>
+					<span class="weatherinformationarea-label">Number of Leaves: </span>
+					<span class="weatherinformationarea-label">Number of Roots: </span>
+					<span class="weatherinformationarea-label">Collected Sunlight: </span>
+					<span class="weatherinformationarea-label">Collected Water: </span>
+				</div>
+
+				<div class="weatherinformationarea-right">
+					<span class="weatherinformationarea-data" id="weatherinformationarea-weathername"></span>
+					<span class="weatherinformationarea-data" id="weatherinformationarea-numbranches"></span>	
+					<span class="weatherinformationarea-data" id="weatherinformationarea-numleaves"></span>
+					<span class="weatherinformationarea-data" id="weatherinformationarea-numroots"></span>
+					<span class="weatherinformationarea-data" id="weatherinformationarea-collectedsunlight"></span>
+					<span class="weatherinformationarea-data" id="weatherinformationarea-collectedwater"></span>
+				</div>
+
+				<div class="clearfix"></div>
 			</div>
-
-			<div class="clearfix"></div>
-		</div>
-
-		<div class="weatherinformationarea">
-			<div class="weatherinformationarea-header">
-				Weather Information
-			</div>
-
-			<div class="weatherinformationarea-left">
-				<span class="weatherinformationarea-label">Current Season: </span>
-				<span class="weatherinformationarea-label">Number of Branches: </span>
-				<span class="weatherinformationarea-label">Number of Leaves: </span>
-				<span class="weatherinformationarea-label">Number of Roots: </span>
-				<span class="weatherinformationarea-label">Collected Sunlight: </span>
-				<span class="weatherinformationarea-label">Collected Water: </span>
-			</div>
-
-			<div class="weatherinformationarea-right">
-				<span class="weatherinformationarea-data" id="weatherinformationarea-weathername"></span>
-				<span class="weatherinformationarea-data" id="weatherinformationarea-numbranches"></span>	
-				<span class="weatherinformationarea-data" id="weatherinformationarea-numleaves"></span>
-				<span class="weatherinformationarea-data" id="weatherinformationarea-numroots"></span>
-				<span class="weatherinformationarea-data" id="weatherinformationarea-collectedsunlight"></span>
-				<span class="weatherinformationarea-data" id="weatherinformationarea-collectedwater"></span>
-			</div>
-
-			<div class="clearfix"></div>
 		</div>
 	</div>
 </body>
