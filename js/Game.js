@@ -28,6 +28,7 @@ class Game
 	start()
 	{
 		this.tree = new Tree(this.treeName);
+		(this.tree).initNewTree();
 
 		if(!this.textOnly)
 		{
@@ -75,7 +76,7 @@ class Game
 		(this.tree).displayTreeInformation($);
 
 		//Display the time left in the day
-		$("#treeinformationarea-timeleftinday").html(Math.ceil((this.timeLeftInDay / 60)) + " minutes");
+		$("#dayinformationarea-timeleftinday").html(Math.ceil((this.timeLeftInDay / 60)) + " minutes");
 	}
 
 	/**

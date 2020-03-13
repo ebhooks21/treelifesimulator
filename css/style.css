@@ -23,174 +23,183 @@ div.textonlyarea
 	height: 100%;
 	width: 100%;
 }
-	div.textonlyarea div.treeinformationarea
+	div.textonlyarea div.leftcolumn
 	{
-		background-color: #FFFFFF;
-		border: 1px solid #FFF;
-		border-radius: 12px;
-		color: #000000;
 		float: left;
-		height: 25%;
-		margin-left: 1%;
-		opacity: 0.5;
-		width: 30%;
+		width: 33%;
 	}
-		div.textonlyarea div.treeinformationarea div.treeinformationarea-header
+		div.textonlyarea div.leftcolumn div.treeinformationarea
 		{
-			display: block;
-			font-size: 1.4vw;
-			font-weight: bold;
-			text-align: center;
+			background-color: #FFFFFF;
+			border: 1px solid #FFF;
+			border-radius: 12px;
+			color: #000000;
+			float: left;
+			height: 32%;
+			margin-left: 1%;
+			margin-bottom: 1%;
+			opacity: 0.5;
 			width: 100%;
 		}
-		div.textonlyarea div.treeinformationarea div.treeinformationarea-left
+			div.textonlyarea div.leftcolumn div.treeinformationarea div.treeinformationarea-header
+			{
+				display: block;
+				font-size: 1.4vw;
+				font-weight: bold;
+				text-align: center;
+				width: 100%;
+			}
+			div.textonlyarea div.leftcolumn div.treeinformationarea div.treeinformationarea-left
+			{
+				float: left;
+				width: 49%;
+			}
+				div.textonlyarea div.leftcolumn div.treeinformationarea div.treeinformationarea-left span.treeinformationarea-label
+				{
+					display: block;
+					text-align: center;
+					width: 100%;
+				}
+			div.textonlyarea div.leftcolumn div.treeinformationarea div.treeinformationarea-right
+			{
+				float: right;
+				width: 49%;
+			}
+				div.textonlyarea div.leftcolumn div.treeinformationarea div.treeinformationarea-right span.treeinformationarea-data
+				{
+					display: block;
+					text-align: center;
+					width: 100%;
+				}
+		div.textonlyarea div.leftcolumn div.weatherinformationarea
 		{
+			background-color: #FFFFFF;
+			border: 1px solid #FFF;
+			border-radius: 12px;
+			color: #000000;
 			float: left;
-			width: 49%;
-		}
-			div.textonlyarea div.treeinformationarea div.treeinformationarea-left span.treeinformationarea-label
-			{
-				display: block;
-				text-align: center;
-				width: 100%;
-			}
-		div.textonlyarea div.treeinformationarea div.treeinformationarea-right
-		{
-			float: right;
-			width: 49%;
-		}
-			div.textonlyarea div.treeinformationarea div.treeinformationarea-right span.treeinformationarea-data
-			{
-				display: block;
-				text-align: center;
-				width: 100%;
-			}
-	div.textonlyarea div.weatherinformationarea
-	{
-		background-color: #FFFFFF;
-		border: 1px solid #FFF;
-		border-radius: 12px;
-		color: #000000;
-		float: left;
-		height: 25%;
-		margin-left: 1%;
-		opacity: 0.5;
-		width: 30%;
-	}
-		div.textonlyarea div.weatherinformationarea div.weatherinformationarea-header
-		{
-			display: block;
-			font-size: 1.4vw;
-			font-weight: bold;
-			text-align: center;
+			height: 32%;
+			margin-left: 1%;
+			margin-bottom: 1%;
+			opacity: 0.5;
 			width: 100%;
 		}
-		div.textonlyarea div.weatherinformationarea div.weatherinformationarea-left
+			div.textonlyarea div.leftcolumn div.weatherinformationarea div.weatherinformationarea-header
+			{
+				display: block;
+				font-size: 1.4vw;
+				font-weight: bold;
+				text-align: center;
+				width: 100%;
+			}
+			div.textonlyarea div.leftcolumn div.weatherinformationarea div.weatherinformationarea-left
+			{
+				float: left;
+				width: 49%;
+			}
+				div.textonlyarea div.leftcolumn div.weatherinformationarea div.weatherinformationarea-left span.weatherinformationarea-label
+				{
+					display: block;
+					text-align: center;
+					width: 100%;
+				}
+			div.textonlyarea div.leftcolumn div.weatherinformationarea div.weatherinformationarea-right
+			{
+				float: right;
+				width: 49%;
+			}
+				div.textonlyarea div.leftcolumn div.weatherinformationarea div.weatherinformationarea-right span.weatherinformationarea-data
+				{
+					display: block;
+					text-align: center;
+					width: 100%;
+				}
+		div.textonlyarea div.leftcolumn div.dayinformationarea
 		{
+			background-color: #FFFFFF;
+			border: 1px solid #FFF;
+			border-radius: 12px;
+			color: #000000;
 			float: left;
-			width: 49%;
-		}
-			div.textonlyarea div.weatherinformationarea div.weatherinformationarea-left span.weatherinformationarea-label
-			{
-				display: block;
-				text-align: center;
-				width: 100%;
-			}
-		div.textonlyarea div.weatherinformationarea div.weatherinformationarea-right
-		{
-			float: right;
-			width: 49%;
-		}
-			div.textonlyarea div.weatherinformationarea div.weatherinformationarea-right span.weatherinformationarea-data
-			{
-				display: block;
-				text-align: center;
-				width: 100%;
-			}
-	div.textonlyarea div.dayinformationarea
-	{
-		background-color: #FFFFFF;
-		border: 1px solid #FFF;
-		border-radius: 12px;
-		color: #000000;
-		float: left;
-		height: 25%;
-		margin-left: 1%;
-		opacity: 0.5;
-		width: 30%;
-	}
-		div.textonlyarea div.dayinformationarea div.dayinformationarea-header
-		{
-			display: block;
-			font-size: 1.4vw;
-			font-weight: bold;
-			text-align: center;
+			height: 32%;
+			margin-left: 1%;
+			margin-bottom: 1%;
+			opacity: 0.5;
 			width: 100%;
 		}
-		div.textonlyarea div.dayinformationarea div.dayinformationarea-left
+			div.textonlyarea div.leftcolumn div.dayinformationarea div.dayinformationarea-header
+			{
+				display: block;
+				font-size: 1.4vw;
+				font-weight: bold;
+				text-align: center;
+				width: 100%;
+			}
+			div.textonlyarea div.leftcolumn div.dayinformationarea div.dayinformationarea-left
+			{
+				float: left;
+				width: 49%;
+			}
+				div.textonlyarea div.leftcolumn div.dayinformationarea div.dayinformationarea-left span.dayinformationarea-label
+				{
+					display: block;
+					text-align: center;
+					width: 100%;
+				}
+			div.textonlyarea div.leftcolumn div.dayinformationarea div.dayinformationarea-right
+			{
+				float: right;
+				width: 49%;
+			}
+				div.textonlyarea div.leftcolumn div.dayinformationarea div.dayinformationarea-right span.dayinformationarea-data
+				{
+					display: block;
+					text-align: center;
+					width: 100%;
+				}
+		div.textonlyarea div.leftcolumn div.trunkinformationarea
 		{
+			background-color: #FFFFFF;
+			border: 1px solid #FFF;
+			border-radius: 12px;
+			color: #000000;
 			float: left;
-			width: 49%;
-		}
-			div.textonlyarea div.dayinformationarea div.dayinformationarea-left span.dayinformationarea-label
-			{
-				display: block;
-				text-align: center;
-				width: 100%;
-			}
-		div.textonlyarea div.dayinformationarea div.dayinformationarea-right
-		{
-			float: right;
-			width: 49%;
-		}
-			div.textonlyarea div.dayinformationarea div.dayinformationarea-right span.dayinformationarea-data
-			{
-				display: block;
-				text-align: center;
-				width: 100%;
-			}
-	div.textonlyarea div.trunkinformationarea
-	{
-		background-color: #FFFFFF;
-		border: 1px solid #FFF;
-		border-radius: 12px;
-		color: #000000;
-		float: left;
-		height: 25%;
-		margin-left: 1%;
-		opacity: 0.5;
-		width: 30%;
-	}
-		div.textonlyarea div.trunkinformationarea div.trunkinformationarea-header
-		{
-			display: block;
-			font-size: 1.4vw;
-			font-weight: bold;
-			text-align: center;
+			height: 32%;
+			margin-left: 1%;
+			margin-bottom: 1%;
+			opacity: 0.5;
 			width: 100%;
 		}
-		div.textonlyarea div.trunkinformationarea div.trunkinformationarea-left
-		{
-			float: left;
-			width: 49%;
-		}
-			div.textonlyarea div.trunkinformationarea div.trunkinformationarea-left span.trunkinformationarea-label
+			div.textonlyarea div.leftcolumn div.trunkinformationarea div.trunkinformationarea-header
 			{
 				display: block;
+				font-size: 1.4vw;
+				font-weight: bold;
 				text-align: center;
 				width: 100%;
 			}
-		div.textonlyarea div.trunkinformationarea div.trunkinformationarea-right
-		{
-			float: right;
-			width: 49%;
-		}
-			:w1div.textonlyarea div.trunkinformationarea div.trunkinformationarea-right span.trunkinformationarea-data
+			div.textonlyarea div.leftcolumn div.trunkinformationarea div.trunkinformationarea-left
 			{
-				display: block;
-				text-align: center;
-				width: 100%;
+				float: left;
+				width: 49%;
 			}
+				div.textonlyarea div.leftcolumn div.trunkinformationarea div.trunkinformationarea-left span.trunkinformationarea-label
+				{
+					display: block;
+					text-align: center;
+					width: 100%;
+				}
+			div.textonlyarea div.leftcolumn div.trunkinformationarea div.trunkinformationarea-right
+			{
+				float: right;
+				width: 49%;
+			}
+				div.textonlyarea div.leftcolumn div.trunkinformationarea div.trunkinformationarea-right span.trunkinformationarea-data
+				{
+					display: block;
+					text-align: center;
+					width: 100%;
+				}
 
 div.clearfix
 {
